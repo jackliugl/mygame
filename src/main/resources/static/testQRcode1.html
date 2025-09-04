@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Webcam Stream</title>
+  <script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
+  </script>
+</head>
+
+<body>
+  <div id="qr-reader" style="width: 600px"></div>
+  <script type="text/javascript">
+    function onScanSuccess(decodedText, decodedResult) {
+      // handle on success condition with the decoded message
+
+      console.log(`Code scanned = ${decodedText}`, decodedResult);
+      html5QrcodeScanner.clear();
+
+      alert(decodedText);
+      alert(decodedResult);
+    }
+    var html5QrcodeScanner = new Html5QrcodeScanner(
+      "qr-reader", { fps: 10, qrbox: 250 });
+    html5QrcodeScanner.render(onScanSuccess);
+  </script>
+</body>
+
+</html>
