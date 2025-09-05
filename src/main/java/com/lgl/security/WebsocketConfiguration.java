@@ -35,7 +35,7 @@ public class WebsocketConfiguration implements WebSocketMessageBrokerConfigurer 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/ws")
-        	.setAllowedOrigins("https://192.168.0.14:8082", "https://192.168.0.14:8443", "wss://192.168.0.14:8443", "http://localhost:8082", "http://192.168.0.14:8082", "chrome-extension://pfdhoblngboilpfeibdedpjgfnlcodoo")
+        	.setAllowedOrigins("https://192.168.0.14:8082", "https://192.168.0.14:8443", "wss://192.168.0.14:8443", "http://localhost:8082", "http://192.168.0.14:8082", "https://mygame-6zac4xqw4q-pd.a.run.app", "http://mygame-6zac4xqw4q-pd.a.run.app:8080", "chrome-extension://pfdhoblngboilpfeibdedpjgfnlcodoo")
         	.withSockJS();
     }
  

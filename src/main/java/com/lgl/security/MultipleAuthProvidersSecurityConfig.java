@@ -179,7 +179,7 @@ public class MultipleAuthProvidersSecurityConfig extends WebSecurityConfigurerAd
 	CorsConfigurationSource corsConfigurationSource() {
 		CorsConfiguration configuration = new CorsConfiguration();
 		configuration.setAllowCredentials(true);
-		configuration.setAllowedOrigins(Arrays.asList("http://localhost:8080", "http://localhost:8082", "http://192.168.0.14:8080", "http://192.168.0.14:8082", "https://localhost:8443", "https://192.168.0.14:8443", "https://192.168.0.14:8082"));
+		configuration.setAllowedOrigins(Arrays.asList("http://localhost:8080", "http://localhost:8082", "http://192.168.0.14:8080", "http://192.168.0.14:8082", "https://localhost:8443", "https://192.168.0.14:8443", "https://192.168.0.14:8082", "https://mygame-6zac4xqw4q-pd.a.run.app", "http://mygame-6zac4xqw4q-pd.a.run.app:8080"));
 		configuration.setAllowedMethods(Arrays.asList("*"));
 		configuration.addAllowedHeader("*");
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
