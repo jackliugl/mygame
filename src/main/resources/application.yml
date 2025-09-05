@@ -21,7 +21,7 @@ server:
     key-password: password
     enabled: false
   #port: 8443
-  address: 192.168.0.14
+  #address: 192.168.0.14
   port: 8080
              
 spring:
